@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+    <div id="telefono">
+
+        <div class="flex_container" id="top">
+            <div id="reloj"></div>
+            <div id="iconos"></div>
+        </div>
+        <div class="flex_container" id="result">
+            <input type="text" id="pantalla" maxlength="6">   
+        </div>
+        <div class="flex_container" id="inside">          
+            <div id="teclado">
+                <button onmousedown="change_primaryDwn(this)"    onmouseup="change_primaryUp('ac')"         class="button primary"   id="ac">AC</button>
+                <button onmousedown="change_primaryDwn(this)"    onmouseup="change_primaryUp('masmenos')"   class="button primary"   id="masmenos">+/-</button>
+                <button onmousedown="change_primaryDwn(this)"    onmouseup="change_primaryUp('porcent')"    class="button primary"   id="porcent">%</button>
+                <button onmousedown="change_secondaryDwn(this)"  onmouseup="change_secondaryUp('entre')"    class="button secondary" id="entre">÷</button>
+                <button onmousedown="change_numberDwn(this)"     onmouseup="change_numberUp('siete')"       class="button number"    id="siete">7</button>
+                <button onmousedown="change_numberDwn(this)"     onmouseup="change_numberUp('ocho')"        class="button number"    id="ocho">8</button>
+                <button onmousedown="change_numberDwn(this)"     onmouseup="change_numberUp('nueve')"       class="button number"    id="nueve" >9</button>
+                <button onmousedown="change_secondaryDwn(this)"  onmouseup="change_secondaryUp('por')"      class="button secondary" id="por">×</button>
+                <button onmousedown="change_numberDwn(this)"     onmouseup="change_numberUp('cuatro')"      class="button number"    id="cuatro">4</button>
+                <button onmousedown="change_numberDwn(this)"     onmouseup="change_numberUp('cinco')"       class="button number"    id="cinco">5</button>
+                <button onmousedown="change_numberDwn(this)"     onmouseup="change_numberUp('seis')"        class="button number"    id="seis">6</button>
+                <button onmousedown="change_secondaryDwn(this)"  onmouseup="change_secondaryUp('menos')"    class="button secondary" id="menos">-</button>
+                <button onmousedown="change_numberDwn(this)"     onmouseup="change_numberUp('uno')"         class="button number"    id="uno">1</button>
+                <button onmousedown="change_numberDwn(this)"     onmouseup="change_numberUp('dos')"         class="button number"    id="dos"> 2</button>
+                <button onmousedown="change_numberDwn(this)"     onmouseup="change_numberUp('tres')"        class="button number"    id="tres">3</button>
+                <button onmousedown="change_secondaryDwn(this)"  onmouseup="change_secondaryUp('mas')"      class="button secondary" id="mas">+</button>
+                <button onmousedown="change_numberDwn(this)"     onmouseup="change_numberUp('cero')"        class="button number"    id="cero">0</button>
+                <button onmousedown="change_numberDwn(this)"     onmouseup="change_numberUp('punto')"       class="button number"    id="punto">,</button>
+                <button onmousedown="change_secondaryDwn(this)"  onmouseup="change_secondaryUp('equal')"    class="button secondary" id="equal">=</button>
+            </div>
+        </div>
+        <div class="flex_container" id="bot">
+            <div id="boton"></div>
+        </div>
+    </div>
+</body>
+</html>
